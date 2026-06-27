@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all rooms and suites at Debbie's Suites & Apartments, Abuja. Standard rooms, executive suites and multi-bedroom apartment suites." />
+  <title>Rooms & Suites | Debbie's Suites & Apartments</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <img src="../images/logo.png" alt="Debbie's Logo" class="preloader-logo" />
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <p class="preloader-text">Preparing Your Experience</p>
+</div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.png" alt="Debbie's Logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Debbie's Suites</span>
+        <span class="nav-logo-sub">Upperclass Events & Recreation</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html" class="active">Rooms</a>
+      <a href="services.html">Services</a>
+      <a href="events.html">Events</a>
+      <a href="restaurant.html">Dining</a>
+      <a href="recreation.html">Recreation</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle mobile menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="accommodation.html">Accommodation</a>
+  <a href="services.html">Services</a>
+  <a href="events.html">Event Centre</a>
+  <a href="restaurant.html">Restaurant</a>
+  <a href="recreation.html">Recreation</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="faq.html">FAQ</a>
+  <a href="booking.html" class="nav-mobile-cta">Book a Room</a>
+</div>
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <div class="section-label" style="color:var(--gold);">Accommodation</div>
+    <h1>Rooms & Suites</h1>
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span><i class="fas fa-chevron-right"></i></span>
+      <span>Accommodation</span>
+    </div>
+  </div>
+</div>
+
+<!-- Intro -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center" style="margin-bottom:48px;">
+      <div class="section-label reveal">50 Rooms & Suites</div>
+      <h2 class="section-title reveal">Your Perfect Room Awaits</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle reveal">
+        Every room at Debbie's is a sanctuary — fully furnished, climate-controlled, with smart entertainment
+        and premium bedding. Filter by type to find your ideal accommodation.
+      </p>
+    </div>
+
+    <!-- Filter -->
+    <div class="rooms-filter reveal">
+      <button class="filter-btn active" data-filter="all">All Rooms</button>
+      <button class="filter-btn" data-filter="standard">Standard Rooms</button>
+      <button class="filter-btn" data-filter="executive">Executive Suites</button>
+      <button class="filter-btn" data-filter="apartment">Apartments</button>
+    </div>
+
+    <!-- Rooms Grid -->
+    <div class="rooms-full-grid">
+
+      <!-- Standard 1 -->
+      <div class="room-detail-card reveal-scale" data-type="standard">
+        <div class="room-detail-img">
+          <img src="../images/room-standard.jpg" alt="Standard Deluxe Room" loading="lazy" />
+          <div class="room-badge" style="position:absolute;top:16px;left:16px;"><span class="gold-badge">Most Popular</span></div>
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Standard Room</div>
+              <h3>Deluxe Guest Room</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦25,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Elegant and fully serviced, our deluxe guest rooms offer the perfect blend of comfort and style for solo travellers and couples.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> King/Queen Bed</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Smart Flat-Screen TV</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Air Conditioning</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Free WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Mini Kitchen</div>
+            <div class="room-feature"><i class="fas fa-check"></i> En-Suite Bathroom</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Daily Housekeeping</div>
+            <div class="room-feature"><i class="fas fa-check"></i> 24hr Room Service</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="standard"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standard 2 -->
+      <div class="room-detail-card reveal-scale" data-type="standard">
+        <div class="room-detail-img">
+          <img src="../images/room-twin.jpg" alt="Twin Standard Room" loading="lazy" />
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Standard Room</div>
+              <h3>Classic Twin Room</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦22,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Perfect for two guests sharing — our twin rooms feature two comfortable beds, modern amenities and a cosy atmosphere.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> Two Single Beds</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Smart TV</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Air Conditioning</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Free WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Mini Kitchen</div>
+            <div class="room-feature"><i class="fas fa-check"></i> En-Suite Bathroom</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Work Desk</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Safe Box</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="standard"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Executive Suite -->
+      <div class="room-detail-card reveal-scale" data-type="executive">
+        <div class="room-detail-img">
+          <img src="../images/room-executive.jpg" alt="Executive Business Suite" loading="lazy" />
+          <div class="room-badge" style="position:absolute;top:16px;left:16px;">
+            <span class="gold-badge" style="background:linear-gradient(135deg,#1A5C2A,#2E7D46);color:#fff;">Executive</span>
+          </div>
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Executive Suite</div>
+              <h3>Executive Business Suite</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦45,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Designed for the discerning business traveller — spacious, beautifully appointed and equipped with everything you need to work and rest in total comfort.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> King-Size Bed</div>
+            <div class="room-feature"><i class="fas fa-check"></i> 55" Smart TV</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Separate Living Area</div>
+            <div class="room-feature"><i class="fas fa-check"></i> High-Speed WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Full Kitchen</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Premium Bathroom</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Work Station</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Balcony View</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="executive"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Executive Suite 2 -->
+      <div class="room-detail-card reveal-scale" data-type="executive">
+        <div class="room-detail-img">
+          <img src="../images/room-executive2.jpg" alt="Premium Executive Suite" loading="lazy" />
+          <div class="room-badge" style="position:absolute;top:16px;left:16px;">
+            <span class="gold-badge">Premium</span>
+          </div>
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Executive Suite</div>
+              <h3>Premium Executive Suite</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦55,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Our most luxurious single-room offering — elevated furnishings, panoramic views and an indulgent bathroom experience that redefines comfort.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> Super King Bed</div>
+            <div class="room-feature"><i class="fas fa-check"></i> 65" OLED Smart TV</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Lounge & Dining Area</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Premium WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Full Gourmet Kitchen</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Jacuzzi Bathtub</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Private Balcony</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Complimentary Minibar</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="executive"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1-Bedroom Apartment -->
+      <div class="room-detail-card reveal-scale" data-type="apartment">
+        <div class="room-detail-img">
+          <img src="../images/room-apartment.jpg" alt="1-Bedroom Apartment Suite" loading="lazy" />
+          <div class="room-badge" style="position:absolute;top:16px;left:16px;">
+            <span class="gold-badge" style="background:linear-gradient(135deg,#0D1B2A,#162840);color:var(--gold);">Apartment</span>
+          </div>
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Apartment Suite</div>
+              <h3>1-Bedroom Apartment</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦60,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Ideal for couples or solo professionals on extended stays — spacious, self-contained and fully equipped for independent living.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> 1 Master Bedroom</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Full Living Room</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Full Kitchen & Dining</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Smart TV (Multiple)</div>
+            <div class="room-feature"><i class="fas fa-check"></i> En-Suite Bathroom</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Laundry Facilities</div>
+            <div class="room-feature"><i class="fas fa-check"></i> High-Speed WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Secure Parking</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="apartment-1bed"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-Bedroom Apartment -->
+      <div class="room-detail-card reveal-scale" data-type="apartment">
+        <div class="room-detail-img">
+          <img src="../images/room-apartment2.jpg" alt="2-Bedroom Apartment Suite" loading="lazy" />
+          <div class="room-badge" style="position:absolute;top:16px;left:16px;">
+            <span class="gold-badge">Family Suite</span>
+          </div>
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Apartment Suite</div>
+              <h3>2-Bedroom Apartment</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦85,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Perfect for families or small groups — two beautifully appointed bedrooms, a generous living space and a full kitchen for a home-away-from-home experience.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> 2 Bedrooms</div>
+            <div class="room-feature"><i class="fas fa-check"></i> 2 Bathrooms</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Large Living Room</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Full Kitchen</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Dining Area</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Multiple Smart TVs</div>
+            <div class="room-feature"><i class="fas fa-check"></i> High-Speed WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Balcony</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="apartment-2bed"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-Bedroom Apartment -->
+      <div class="room-detail-card reveal-scale" data-type="apartment">
+        <div class="room-detail-img">
+          <img src="../images/room-apartment3.jpg" alt="3-Bedroom Apartment Suite" loading="lazy" />
+          <div class="room-badge" style="position:absolute;top:16px;left:16px;">
+            <span class="gold-badge" style="background:linear-gradient(135deg,var(--gold),var(--gold-dark));">Grandest</span>
+          </div>
+        </div>
+        <div class="room-detail-body">
+          <div class="room-detail-header">
+            <div>
+              <div class="room-type">Apartment Suite</div>
+              <h3>3-Bedroom Grand Apartment</h3>
+              <div class="stars" style="margin-top:6px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <div class="room-detail-price">
+              <span class="amount">₦120,000</span>
+              <span class="per">per night</span>
+            </div>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:4px;">
+            Our grandest offering — three en-suite bedrooms, a sprawling living area and premium finishes throughout. Ideal for large families, VIP guests and extended stays.
+          </p>
+          <div class="room-features-list">
+            <div class="room-feature"><i class="fas fa-check"></i> 3 En-Suite Bedrooms</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Grand Living Room</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Gourmet Kitchen</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Formal Dining Room</div>
+            <div class="room-feature"><i class="fas fa-check"></i> 3+ Smart TVs</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Premium WiFi</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Private Balcony</div>
+            <div class="room-feature"><i class="fas fa-check"></i> Dedicated Parking</div>
+          </div>
+          <div class="room-detail-footer">
+            <a href="booking.html" class="btn btn-gold" data-action="book" data-room="apartment-3bed"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="contact.html" class="btn btn-outline-gold"><i class="fas fa-phone"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end rooms-full-grid -->
+
+    <!-- Amenities Strip -->
+    <div style="background:var(--navy);border-radius:var(--radius-lg);padding:48px;margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;" class="reveal">
+      <div>
+        <i class="fas fa-wifi" style="font-size:2rem;color:var(--gold);margin-bottom:12px;display:block;"></i>
+        <h4 style="font-family:var(--font-display);font-size:1.1rem;color:white;margin-bottom:6px;">Free WiFi</h4>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);">High-speed internet in all rooms</p>
+      </div>
+      <div>
+        <i class="fas fa-car" style="font-size:2rem;color:var(--gold);margin-bottom:12px;display:block;"></i>
+        <h4 style="font-family:var(--font-display);font-size:1.1rem;color:white;margin-bottom:6px;">Free Parking</h4>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);">Secure on-site parking for all guests</p>
+      </div>
+      <div>
+        <i class="fas fa-shield-alt" style="font-size:2rem;color:var(--gold);margin-bottom:12px;display:block;"></i>
+        <h4 style="font-family:var(--font-display);font-size:1.1rem;color:white;margin-bottom:6px;">24/7 Security</h4>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);">Round-the-clock security and CCTV</p>
+      </div>
+      <div>
+        <i class="fas fa-concierge-bell" style="font-size:2rem;color:var(--gold);margin-bottom:12px;display:block;"></i>
+        <h4 style="font-family:var(--font-display);font-size:1.1rem;color:white;margin-bottom:6px;">Room Service</h4>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);">24-hour in-room dining available</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm" style="background:linear-gradient(135deg,var(--green-dark),var(--navy));">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <div class="reveal">
+        <p style="font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Ready to Check In?</p>
+        <h3 style="font-family:var(--font-display);font-size:1.8rem;color:white;">Book Your Favourite Room Today</h3>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;" class="reveal">
+        <a href="booking.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Book Now</a>
+        <a href="contact.html" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <img src="../images/logo.png" alt="Debbie's Logo" />
+          <div>
+            <div class="footer-brand-name">Debbie's Suites & Apartments</div>
+            <div class="footer-brand-sub">Upperclass Events & Recreation</div>
+          </div>
+        </div>
+        <p class="footer-desc">Premium 3-star luxury hospitality, events and recreation in Orozo, Abuja, Nigeria.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/debbies_upperclass" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/DebbiesUpperclassEventandRecreation" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/2348091766665" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:debbiesupperclass@gmail.com" class="footer-social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Rooms & Suites</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Event Centre</a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Room Types</h4>
+        <ul class="footer-links">
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Standard Rooms</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Executive Suites</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> 1-Bed Apartments</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> 2-Bed Apartments</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> 3-Bed Apartments</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">KM 7, Nyanya-Karu-Karshi Road, Orozo, FCT Abuja</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="footer-contact-text">
+            <a href="tel:08091766665">08091766665</a><br>
+            <a href="tel:09033931121">09033931121</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:debbiesupperclass@gmail.com">debbiesupperclass@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> <span>Debbie's Suites & Apartments</span>. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

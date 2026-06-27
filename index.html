@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Debbie's Suites & Apartments — A premium 3-star luxury hotel, serviced apartments, event centre, gym, restaurant and recreation hub in Abuja, Nigeria." />
+  <meta name="keywords" content="Debbie's Suites, luxury hotel Abuja, serviced apartments Nigeria, event centre Abuja, Orozo hotel, Debbie's Upperclass" />
+  <meta property="og:title" content="Debbie's Suites & Apartments | Luxury Hotel, Abuja" />
+  <meta property="og:description" content="Experience luxury redefined. Premium suites, event halls, fine dining, gym and recreation at Debbie's Upperclass, Abuja." />
+  <meta property="og:type" content="website" />
+  <title>Debbie's Suites & Apartments | Luxury Hotel & Event Centre, Abuja</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     PRELOADER
+══════════════════════════════════════ -->
+<div id="preloader" aria-hidden="true">
+  <img src="images/logo.png" alt="Debbie's Logo" class="preloader-logo" />
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <p class="preloader-text">Preparing Your Experience</p>
+</div>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="Debbie's Suites Home">
+      <img src="images/logo.png" alt="Debbie's Upperclass Logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Debbie's Suites</span>
+        <span class="nav-logo-sub">Upperclass Events & Recreation</span>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/accommodation.html">Rooms</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/events.html">Events</a>
+      <a href="pages/restaurant.html">Dining</a>
+      <a href="pages/recreation.html">Recreation</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="pages/booking.html" class="nav-cta">Book Now</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="pages/about.html">About Us</a>
+  <a href="pages/accommodation.html">Accommodation</a>
+  <a href="pages/services.html">Services</a>
+  <a href="pages/events.html">Event Centre</a>
+  <a href="pages/restaurant.html">Restaurant</a>
+  <a href="pages/recreation.html">Recreation</a>
+  <a href="pages/gallery.html">Gallery</a>
+  <a href="pages/contact.html">Contact</a>
+  <a href="pages/faq.html">FAQ</a>
+  <a href="pages/booking.html" class="nav-mobile-cta">Book a Room</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════ -->
+<section id="hero" aria-label="Hero banner">
+  <div class="hero-bg" role="img" aria-label="Debbie's Suites building exterior"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      <span>Premium 3-Star Luxury Hotel · Abuja, Nigeria</span>
+    </div>
+
+    <h1 class="hero-title">
+      Where <em>Luxury</em><br>Meets Comfort
+    </h1>
+    <p class="hero-subtitle-line">Suites, Events & Recreation — Redefined</p>
+
+    <p class="hero-desc">
+      Experience world-class hospitality in the heart of Abuja. 50 fully serviced rooms,
+      premium event halls, fine dining, spa, gym, and a vibrant recreation hub — all in one
+      extraordinary address.
+    </p>
+
+    <div class="hero-actions">
+      <a href="pages/booking.html" class="btn btn-gold">
+        <i class="fas fa-calendar-check"></i> Reserve Your Suite
+      </a>
+      <a href="pages/accommodation.html" class="btn btn-outline-white">
+        <i class="fas fa-door-open"></i> Explore Rooms
+      </a>
+    </div>
+
+    <div class="hero-features">
+      <div class="hero-feature-pill"><i class="fas fa-wifi"></i> Free WiFi</div>
+      <div class="hero-feature-pill"><i class="fas fa-swimming-pool"></i> Swimming Pool</div>
+      <div class="hero-feature-pill"><i class="fas fa-dumbbell"></i> Fitness Centre</div>
+      <div class="hero-feature-pill"><i class="fas fa-utensils"></i> Fine Dining</div>
+      <div class="hero-feature-pill"><i class="fas fa-glass-cheers"></i> Event Halls</div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     STATS STRIP
+══════════════════════════════════════ -->
+<section id="stats" aria-label="Key statistics">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-number"><span data-count="50" data-suffix="+">0+</span></div>
+      <div class="stat-label">Guest Rooms & Suites</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number"><span data-count="5" data-suffix="">0</span></div>
+      <div class="stat-label">Unique Facilities</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number"><span data-count="2" data-suffix="">0</span></div>
+      <div class="stat-label">Fine Dining Restaurants</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number"><span data-count="1000" data-suffix="+">0+</span></div>
+      <div class="stat-label">Happy Guests Served</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     WHY CHOOSE DEBBIE'S
+══════════════════════════════════════ -->
+<section class="section" id="why-us" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label reveal">Why Choose Us</div>
+      <h2 class="section-title reveal" id="why-title">The Debbie's Difference</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle reveal">
+        We don't just offer rooms — we craft unforgettable experiences. From the moment you
+        arrive to the moment you leave, every detail is thoughtfully curated for you.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-crown"></i></div>
+        <h3>Premium Luxury</h3>
+        <p>Every suite and apartment is meticulously furnished with premium materials, smart televisions and fully equipped kitchens — your home away from home.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-concierge-bell"></i></div>
+        <h3>Exceptional Service</h3>
+        <p>Our trained hospitality professionals are available around the clock to ensure every request is met with a warm smile and swift action.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Prime Location</h3>
+        <p>Nestled at the scenic Abuja–Nasarawa border with mountain views, serene surroundings and easy access to the capital's major landmarks.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-glass-cheers"></i></div>
+        <h3>All-in-One Destination</h3>
+        <p>Hotel, event centre, restaurants, gym, swimming pools, lounge and bar — everything you need is right here under one roof.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Safe & Secure</h3>
+        <p>Gated premises with 24/7 security, CCTV surveillance and dedicated parking, giving you total peace of mind throughout your stay.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-star"></i></div>
+        <h3>Unmatched Value</h3>
+        <p>Premium 3-star quality at rates that make luxury accessible. Exclusive packages for corporate guests, couples and extended stays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FEATURED ROOMS
+══════════════════════════════════════ -->
+<section class="section section-off-white" id="featured-rooms" aria-labelledby="rooms-title">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label reveal">Accommodation</div>
+      <h2 class="section-title reveal" id="rooms-title">Curated Rooms & Suites</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle reveal">
+        Choose from 50 meticulously designed guest rooms, executive suites and multi-bedroom
+        apartments — each offering a unique blend of elegance and comfort.
+      </p>
+    </div>
+
+    <div class="rooms-grid">
+      <!-- Room 1 -->
+      <div class="room-card reveal-scale">
+        <div class="room-img-wrap">
+          <img src="images/room-standard.jpg" alt="Standard Guest Room at Debbie's Suites" loading="lazy" />
+          <div class="room-img-overlay"></div>
+          <div class="room-badge"><span class="gold-badge">Most Popular</span></div>
+          <a href="pages/booking.html" class="btn btn-gold room-overlay-btn" data-action="book" data-room="standard">
+            Book Now
+          </a>
+        </div>
+        <div class="room-info">
+          <div class="room-type">Standard Room</div>
+          <h3>Deluxe Guest Room</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="room-amenities">
+            <div class="room-amenity"><i class="fas fa-tv"></i> Smart TV</div>
+            <div class="room-amenity"><i class="fas fa-wifi"></i> Free WiFi</div>
+            <div class="room-amenity"><i class="fas fa-snowflake"></i> AC</div>
+            <div class="room-amenity"><i class="fas fa-utensils"></i> Kitchen</div>
+          </div>
+          <div class="room-footer">
+            <div class="room-price">From <strong>₦25,000</strong>/night</div>
+            <a href="pages/booking.html" class="btn btn-outline-gold" style="padding:10px 20px; font-size:0.68rem;">Reserve</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="room-card reveal-scale">
+        <div class="room-img-wrap">
+          <img src="images/room-executive.jpg" alt="Executive Suite at Debbie's Suites" loading="lazy" />
+          <div class="room-img-overlay"></div>
+          <div class="room-badge"><span class="gold-badge" style="background:linear-gradient(135deg,#1A5C2A,#2E7D46); color:#fff;">Executive</span></div>
+          <a href="pages/booking.html" class="btn btn-gold room-overlay-btn" data-action="book" data-room="executive">
+            Book Now
+          </a>
+        </div>
+        <div class="room-info">
+          <div class="room-type">Executive Suite</div>
+          <h3>Executive Business Suite</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="room-amenities">
+            <div class="room-amenity"><i class="fas fa-tv"></i> 55" Smart TV</div>
+            <div class="room-amenity"><i class="fas fa-wifi"></i> Fast WiFi</div>
+            <div class="room-amenity"><i class="fas fa-couch"></i> Living Area</div>
+            <div class="room-amenity"><i class="fas fa-blender"></i> Full Kitchen</div>
+          </div>
+          <div class="room-footer">
+            <div class="room-price">From <strong>₦45,000</strong>/night</div>
+            <a href="pages/booking.html" class="btn btn-outline-gold" style="padding:10px 20px; font-size:0.68rem;">Reserve</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room 3 -->
+      <div class="room-card reveal-scale">
+        <div class="room-img-wrap">
+          <img src="images/room-apartment.jpg" alt="Multi-bedroom Apartment at Debbie's Suites" loading="lazy" />
+          <div class="room-img-overlay"></div>
+          <div class="room-badge"><span class="gold-badge" style="background:linear-gradient(135deg,#0D1B2A,#162840); color:var(--gold);">Premium</span></div>
+          <a href="pages/booking.html" class="btn btn-gold room-overlay-btn" data-action="book" data-room="apartment">
+            Book Now
+          </a>
+        </div>
+        <div class="room-info">
+          <div class="room-type">Apartment Suite</div>
+          <h3>Multi-Bedroom Apartment</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="room-amenities">
+            <div class="room-amenity"><i class="fas fa-bed"></i> 2-3 Bedrooms</div>
+            <div class="room-amenity"><i class="fas fa-users"></i> Family-Sized</div>
+            <div class="room-amenity"><i class="fas fa-tv"></i> Multiple TVs</div>
+            <div class="room-amenity"><i class="fas fa-bath"></i> En-suite Baths</div>
+          </div>
+          <div class="room-footer">
+            <div class="room-price">From <strong>₦70,000</strong>/night</div>
+            <a href="pages/booking.html" class="btn btn-outline-gold" style="padding:10px 20px; font-size:0.68rem;">Reserve</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:48px;" class="reveal">
+      <a href="pages/accommodation.html" class="btn btn-dark">
+        <i class="fas fa-th-large"></i> View All Rooms & Suites
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SERVICES OVERVIEW
+══════════════════════════════════════ -->
+<section class="section" id="services-overview" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label reveal">Our Facilities</div>
+      <h2 class="section-title light reveal" id="services-title">Everything Under One Roof</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle light reveal">
+        A complete lifestyle destination — where every amenity is designed to elevate your experience.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-tile reveal">
+        <i class="fas fa-hotel service-tile-icon"></i>
+        <h3>Hotel Accommodation</h3>
+        <p>50 fully serviced guest rooms, executive suites and multi-bedroom apartments with premium furnishings and smart appliances.</p>
+        <a href="pages/accommodation.html" class="service-tile-link">Explore Rooms <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-tile reveal">
+        <i class="fas fa-glass-cheers service-tile-icon"></i>
+        <h3>Event Centre</h3>
+        <p>Premium halls for weddings, receptions, corporate conferences, seminars and celebrations — capacity for any occasion.</p>
+        <a href="pages/events.html" class="service-tile-link">View Halls <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-tile reveal">
+        <i class="fas fa-dumbbell service-tile-icon"></i>
+        <h3>Gym & Fitness</h3>
+        <p>A fully equipped fitness centre with professional-grade equipment for cardio, strength training and wellness routines.</p>
+        <a href="pages/services.html#gym" class="service-tile-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-tile reveal">
+        <i class="fas fa-cocktail service-tile-icon"></i>
+        <h3>Lounge & Bar</h3>
+        <p>Unwind at our stylish indoor lounge, breathtaking outdoor terrace or poolside bar — crafted cocktails and premium drinks await.</p>
+        <a href="pages/services.html#lounge" class="service-tile-link">Discover More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-tile reveal">
+        <i class="fas fa-utensils service-tile-icon"></i>
+        <h3>Fine Dining</h3>
+        <p>Two world-class restaurants serving authentic Nigerian cuisine and international continental dishes by skilled chefs.</p>
+        <a href="pages/restaurant.html" class="service-tile-link">See Menu <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-tile reveal">
+        <i class="fas fa-swimming-pool service-tile-icon"></i>
+        <h3>Swimming Pools</h3>
+        <p>Take a dip in our sparkling adult pool or let the kids splash in the dedicated children's pool — refreshing recreation for all.</p>
+        <a href="pages/recreation.html" class="service-tile-link">Recreation <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EVENT CENTRE HIGHLIGHT
+══════════════════════════════════════ -->
+<section class="section" id="event-highlight" aria-labelledby="event-title">
+  <div class="container">
+    <div class="event-split">
+      <!-- Image Stack -->
+      <div class="event-img-stack reveal-left">
+        <div class="event-img-main">
+          <img src="images/event-hall.jpg" alt="Debbie's Premium Event Hall" loading="lazy" />
+        </div>
+        <div class="event-img-accent">
+          <img src="images/event-wedding.jpg" alt="Wedding setup at Debbie's Event Centre" loading="lazy" />
+        </div>
+        <div class="event-badge-float">
+          <div class="num">500+</div>
+          <div class="lbl">Events Hosted</div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="event-content reveal-right">
+        <div class="section-label">Event Centre</div>
+        <h2 class="section-title" id="event-title">Your Perfect<br>Event Venue Awaits</h2>
+        <div class="gold-divider"></div>
+        <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.85; margin-bottom:20px;">
+          Debbie's Upperclass Event and Recreation Centre is Abuja's premier venue for every
+          occasion — from intimate gatherings to grand celebrations with hundreds of guests.
+          Our expert event team handles every detail so you can focus on the memories.
+        </p>
+
+        <div class="event-types">
+          <span class="event-type-tag"><i class="fas fa-ring" style="color:var(--gold); margin-right:6px;"></i> Weddings</span>
+          <span class="event-type-tag"><i class="fas fa-briefcase" style="color:var(--gold); margin-right:6px;"></i> Corporate Events</span>
+          <span class="event-type-tag"><i class="fas fa-microphone" style="color:var(--gold); margin-right:6px;"></i> Conferences</span>
+          <span class="event-type-tag"><i class="fas fa-birthday-cake" style="color:var(--gold); margin-right:6px;"></i> Celebrations</span>
+          <span class="event-type-tag"><i class="fas fa-users" style="color:var(--gold); margin-right:6px;"></i> Seminars</span>
+          <span class="event-type-tag"><i class="fas fa-glass-cheers" style="color:var(--gold); margin-right:6px;"></i> Receptions</span>
+        </div>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:32px;">
+          <a href="pages/events.html" class="btn btn-gold">
+            <i class="fas fa-calendar-alt"></i> Explore Venue
+          </a>
+          <a href="pages/contact.html" class="btn btn-outline-gold">
+            <i class="fas fa-phone"></i> Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════ -->
+<section class="section" id="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label reveal">Guest Reviews</div>
+      <h2 class="section-title light reveal" id="testimonials-title">What Our Guests Say</h2>
+      <div class="gold-divider center reveal"></div>
+    </div>
+
+    <div class="testimonials-slider">
+      <div class="testimonials-track">
+        <div class="testimonial-card reveal">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Staying at Debbie's was an absolute delight. The rooms are immaculate, the staff incredibly attentive, and the food from the restaurant was simply outstanding. I will definitely be back!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AN</div>
+            <div>
+              <div class="testimonial-name">Amaka Nwosu</div>
+              <div class="testimonial-origin">Lagos, Nigeria</div>
+            </div>
+            <div class="stars" style="margin-left:auto">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">We hosted our corporate retreat here and the event team exceeded every expectation. The hall setup was professional, the AV equipment flawless, and the catering was world-class.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">KO</div>
+            <div>
+              <div class="testimonial-name">Kunle Oladele</div>
+              <div class="testimonial-origin">Abuja, Nigeria</div>
+            </div>
+            <div class="stars" style="margin-left:auto">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">The swimming pool area is stunning and the gym is very well equipped. Our family had an unforgettable vacation. The children loved the pool and the restaurant served amazing jollof rice!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">FI</div>
+            <div>
+              <div class="testimonial-name">Fatima Ibrahim</div>
+              <div class="testimonial-origin">Kaduna, Nigeria</div>
+            </div>
+            <div class="stars" style="margin-left:auto">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">I booked the executive suite for a week-long business trip and it felt like a luxury apartment. The kitchen was fully stocked, the bed heavenly, and the view of the hills breathtaking.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CE</div>
+            <div>
+              <div class="testimonial-name">Chinedu Eze</div>
+              <div class="testimonial-origin">Port Harcourt, Nigeria</div>
+            </div>
+            <div class="stars" style="margin-left:auto">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Our wedding reception at Debbie's Upperclass was magical. The hall looked like something out of a magazine. Every guest commented on how elegant and well-organised everything was.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">TM</div>
+            <div>
+              <div class="testimonial-name">Taiwo & Miriam</div>
+              <div class="testimonial-origin">Abuja, Nigeria</div>
+            </div>
+            <div class="stars" style="margin-left:auto">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">From check-in to checkout, the professionalism of the staff is second to none. The lounge bar had incredible ambiance. Truly a gem hidden in Orozo — I recommend to everyone.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">YA</div>
+            <div>
+              <div class="testimonial-name">Yusuf Abubakar</div>
+              <div class="testimonial-origin">Nassarawa, Nigeria</div>
+            </div>
+            <div class="stars" style="margin-left:auto">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-btn prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-dots">
+        <button class="slider-dot active" aria-label="Slide 1"></button>
+        <button class="slider-dot" aria-label="Slide 2"></button>
+      </div>
+      <button class="slider-btn next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     GALLERY PREVIEW
+══════════════════════════════════════ -->
+<section class="section" id="gallery-preview" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label reveal">Our Gallery</div>
+      <h2 class="section-title reveal" id="gallery-title">A Glimpse of Excellence</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle reveal">
+        From luxurious rooms to vibrant event spaces — every corner of Debbie's is designed to impress.
+      </p>
+    </div>
+
+    <div class="gallery-mosaic reveal">
+      <div class="mosaic-item">
+        <img src="images/gallery-pool.jpg" alt="Swimming Pool at Debbie's Suites" loading="lazy" />
+        <div class="mosaic-overlay"><span class="mosaic-label">Swimming Pool</span></div>
+        <div class="mosaic-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="images/gallery-room.jpg" alt="Luxury Room Interior" loading="lazy" />
+        <div class="mosaic-overlay"><span class="mosaic-label">Luxury Rooms</span></div>
+        <div class="mosaic-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="images/gallery-event.jpg" alt="Event Hall at Debbie's" loading="lazy" />
+        <div class="mosaic-overlay"><span class="mosaic-label">Event Centre</span></div>
+        <div class="mosaic-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="images/gallery-restaurant.jpg" alt="Restaurant at Debbie's" loading="lazy" />
+        <div class="mosaic-overlay"><span class="mosaic-label">Restaurant</span></div>
+        <div class="mosaic-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="images/gallery-gym.jpg" alt="Fitness Centre" loading="lazy" />
+        <div class="mosaic-overlay"><span class="mosaic-label">Gym & Fitness</span></div>
+        <div class="mosaic-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="mosaic-item">
+        <img src="images/gallery-lounge.jpg" alt="Lounge and Bar" loading="lazy" />
+        <div class="mosaic-overlay"><span class="mosaic-label">Lounge & Bar</span></div>
+        <div class="mosaic-zoom"><i class="fas fa-search-plus"></i></div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:48px;" class="reveal">
+      <a href="pages/gallery.html" class="btn btn-gold">
+        <i class="fas fa-images"></i> View Full Gallery
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════ -->
+<section id="cta-banner" aria-label="Call to action — Book your stay">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-content">
+      <div class="section-label reveal" style="justify-content:center;">Limited Availability</div>
+      <h2 class="reveal">Ready to Experience<br><em class="shimmer-text">Debbie's Luxury?</em></h2>
+      <p class="reveal">
+        Reserve your suite today and step into a world of comfort, elegance and exceptional
+        Nigerian hospitality. Your perfect stay is just one click away.
+      </p>
+      <div class="cta-actions reveal">
+        <a href="pages/booking.html" class="btn btn-gold">
+          <i class="fas fa-calendar-check"></i> Book Your Stay Now
+        </a>
+        <a href="tel:08091766665" class="btn btn-outline-white">
+          <i class="fas fa-phone"></i> Call Us: 0809 176 6665
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     QUICK CONTACT STRIP
+══════════════════════════════════════ -->
+<section class="section-sm section-dark" aria-label="Quick contact information">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px; align-items:center;">
+      <div style="display:flex; align-items:center; gap:16px;" class="reveal">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,168,76,0.12);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div>
+          <div style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">Call Us</div>
+          <a href="tel:08091766665" style="color:white;font-size:0.88rem;display:block;">08091766665</a>
+          <a href="tel:09033931121" style="color:rgba(255,255,255,0.6);font-size:0.83rem;">09033931121</a>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:16px; justify-content:center;" class="reveal">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,168,76,0.12);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div>
+          <div style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">Email Us</div>
+          <a href="mailto:debbiesupperclass@gmail.com" style="color:rgba(255,255,255,0.8);font-size:0.85rem;">debbiesupperclass@gmail.com</a>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:16px;" class="reveal">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,168,76,0.12);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div>
+          <div style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">Find Us</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.83rem;line-height:1.6;">KM 7, Nyanya-Karu-Karshi Rd, Orozo, FCT Abuja</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <img src="images/logo.png" alt="Debbie's Upperclass Logo" />
+          <div>
+            <div class="footer-brand-name">Debbie's Suites & Apartments</div>
+            <div class="footer-brand-sub">Upperclass Events & Recreation</div>
+          </div>
+        </div>
+        <p class="footer-desc">
+          A premium 3-star luxury hotel, event centre and recreation hub nestled in
+          the scenic hills of Orozo, on the Abuja–Nasarawa border. Where every stay is extraordinary.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/debbies_upperclass" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/DebbiesUpperclassEventandRecreation" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/2348091766665" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:debbiesupperclass@gmail.com" class="footer-social-btn" aria-label="Send us an email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="pages/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="pages/accommodation.html"><i class="fas fa-chevron-right"></i> Rooms & Suites</a></li>
+          <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+          <li><a href="pages/events.html"><i class="fas fa-chevron-right"></i> Event Centre</a></li>
+          <li><a href="pages/gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="pages/booking.html"><i class="fas fa-chevron-right"></i> Book a Room</a></li>
+          <li><a href="pages/faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="pages/accommodation.html"><i class="fas fa-chevron-right"></i> Hotel Rooms</a></li>
+          <li><a href="pages/accommodation.html"><i class="fas fa-chevron-right"></i> Executive Suites</a></li>
+          <li><a href="pages/events.html"><i class="fas fa-chevron-right"></i> Event Halls</a></li>
+          <li><a href="pages/restaurant.html"><i class="fas fa-chevron-right"></i> Restaurant</a></li>
+          <li><a href="pages/recreation.html"><i class="fas fa-chevron-right"></i> Swimming Pools</a></li>
+          <li><a href="pages/services.html#gym"><i class="fas fa-chevron-right"></i> Fitness Centre</a></li>
+          <li><a href="pages/services.html#lounge"><i class="fas fa-chevron-right"></i> Lounge & Bar</a></li>
+          <li><a href="pages/contact.html"><i class="fas fa-chevron-right"></i> Concierge</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">KM 7, Nyanya-Karu-Karshi Road, Orozo, Federal Capital Territory, Nigeria</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="footer-contact-text">
+            <a href="tel:08091766665">08091766665</a><br>
+            <a href="tel:09033931121">09033931121</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text">
+            <a href="mailto:debbiesupperclass@gmail.com">debbiesupperclass@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-clock"></i></div>
+          <div class="footer-contact-text">Open 24 Hours · 7 Days a Week</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> <span>Debbie's Suites & Apartments</span>. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/terms.html">Terms & Conditions</a>
+        <a href="pages/contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════
+     BACK TO TOP
+══════════════════════════════════════ -->
+<button id="back-to-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ══════════════════════════════════════
+     COOKIE BANNER
+══════════════════════════════════════ -->
+<div class="cookie-banner" role="alert" aria-live="polite">
+  <p>We use cookies to enhance your experience on our website. By continuing to browse, you agree to our <a href="pages/privacy.html">Privacy Policy</a>.</p>
+  <button class="cookie-btn">Accept</button>
+</div>
+
+<!-- Set footer year -->
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+</html>

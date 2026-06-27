@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your luxury room or suite at Debbie's Suites & Apartments, Abuja. Easy online reservation with instant confirmation." />
+  <title>Book a Room | Debbie's Suites & Apartments</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader" aria-hidden="true">
+  <img src="../images/logo.png" alt="Debbie's Logo" class="preloader-logo" />
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <p class="preloader-text">Preparing Your Experience</p>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.png" alt="Debbie's Logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Debbie's Suites</span>
+        <span class="nav-logo-sub">Upperclass Events & Recreation</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Rooms</a>
+      <a href="services.html">Services</a>
+      <a href="events.html">Events</a>
+      <a href="restaurant.html">Dining</a>
+      <a href="recreation.html">Recreation</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta active">Book Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle mobile menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile">
+  <a href="../index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="accommodation.html">Accommodation</a>
+  <a href="services.html">Services</a>
+  <a href="events.html">Event Centre</a>
+  <a href="restaurant.html">Restaurant</a>
+  <a href="recreation.html">Recreation</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="faq.html">FAQ</a>
+  <a href="booking.html" class="nav-mobile-cta">Book a Room</a>
+</div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <div class="section-label" style="color:var(--gold);">Reservations</div>
+    <h1>Book Your Stay</h1>
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span><i class="fas fa-chevron-right"></i></span>
+      <span>Book a Room</span>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Section -->
+<section class="section section-off-white">
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="section-header center" style="margin-bottom:56px;">
+      <div class="section-label reveal">Reserve Online</div>
+      <h2 class="section-title reveal">Secure Your Perfect Suite</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle reveal">
+        Fill in your details below and our team will confirm your reservation. We look forward to
+        welcoming you to Debbie's Upperclass.
+      </p>
+    </div>
+
+    <div class="booking-layout">
+      <!-- Form -->
+      <div class="booking-form-wrap reveal-left">
+        <h2 class="booking-form-title">Reservation Details</h2>
+        <p class="booking-form-sub">All fields marked * are required. We'll reach out within 24 hours to confirm.</p>
+
+        <!-- ACTION: Replace YOUR_FORMSPREE_ID with your Formspree form ID when ready -->
+        <form id="booking-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
+
+          <!-- Personal Info -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name *</label>
+              <input type="text" id="full-name" name="full_name" placeholder="e.g. Amaka Okafor" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" required />
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Dates -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Check-in Date *</label>
+              <input type="date" id="checkin" name="checkin_date" required />
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-out Date *</label>
+              <input type="date" id="checkout" name="checkout_date" required />
+            </div>
+          </div>
+
+          <!-- Room Type -->
+          <div class="form-group">
+            <label for="room-type">Room / Suite Type *</label>
+            <select id="room-type" name="room_type" required>
+              <option value="" disabled selected>Select a room type</option>
+              <option value="standard">Standard Guest Room</option>
+              <option value="executive">Executive Business Suite</option>
+              <option value="apartment-1bed">1-Bedroom Apartment Suite</option>
+              <option value="apartment-2bed">2-Bedroom Apartment Suite</option>
+              <option value="apartment-3bed">3-Bedroom Apartment Suite</option>
+              <option value="event">Event Hall Booking</option>
+            </select>
+          </div>
+
+          <!-- Special Requests -->
+          <div class="form-group">
+            <label for="special-requests">Special Requests or Notes</label>
+            <textarea id="special-requests" name="special_requests" placeholder="Let us know about any dietary requirements, accessibility needs, occasion celebrations, or any other preferences..."></textarea>
+          </div>
+
+          <!-- How did you hear -->
+          <div class="form-group">
+            <label for="referral">How Did You Hear About Us?</label>
+            <select id="referral" name="referral">
+              <option value="" disabled selected>Select an option</option>
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="google">Google Search</option>
+              <option value="referral">Friend / Family</option>
+              <option value="past-guest">Past Guest</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Privacy Consent -->
+          <div class="form-group" style="flex-direction:row; align-items:flex-start; gap:12px;">
+            <input type="checkbox" id="consent" name="consent" required style="width:18px;height:18px;flex-shrink:0;margin-top:2px;accent-color:var(--gold);" />
+            <label for="consent" style="font-size:0.8rem;color:var(--text-muted);font-weight:400;letter-spacing:0;text-transform:none;">
+              I agree to Debbie's Suites' <a href="privacy.html" style="color:var(--gold);">Privacy Policy</a> and
+              <a href="terms.html" style="color:var(--gold);">Terms & Conditions</a>. I understand my booking details will be used to process my reservation.*
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-gold form-submit">
+            <i class="fas fa-calendar-check"></i> Submit Reservation Request
+          </button>
+
+          <p style="font-size:0.75rem;color:var(--text-muted);text-align:center;margin-top:16px;line-height:1.7;">
+            <i class="fas fa-lock" style="color:var(--green-mid);margin-right:4px;"></i>
+            Your information is encrypted and secure. No payment is required at this stage.
+          </p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="booking-sidebar reveal-right">
+        <!-- Contact Card -->
+        <div class="booking-info-card">
+          <h3>Need Help Booking?</h3>
+          <div class="booking-info-item">
+            <i class="fas fa-phone"></i>
+            <span>Call us directly:<br>
+              <a href="tel:08091766665" style="color:var(--gold);">08091766665</a><br>
+              <a href="tel:09033931121" style="color:var(--gold);">09033931121</a>
+            </span>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:debbiesupperclass@gmail.com">debbiesupperclass@gmail.com</a></span>
+          </div>
+          <div class="booking-info-item">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://wa.me/2348091766665" target="_blank" rel="noopener" style="color:var(--gold);">Chat on WhatsApp</a></span>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-clock"></i>
+            <span>Available 24/7 · 7 days a week</span>
+          </div>
+        </div>
+
+        <!-- Perks Card -->
+        <div class="booking-info-card">
+          <h3>Your Stay Includes</h3>
+          <div class="booking-perks">
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Complimentary WiFi</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> 24-hour Reception & Security</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Daily Housekeeping</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Access to Swimming Pool</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Fully Equipped Kitchen</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Smart Flat-Screen TV</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Secure Parking</div>
+            <div class="booking-perk"><i class="fas fa-check-circle"></i> Concierge Assistance</div>
+          </div>
+        </div>
+
+        <!-- Policy Card -->
+        <div class="booking-info-card">
+          <h3>Booking Policy</h3>
+          <div class="booking-info-item">
+            <i class="fas fa-sign-in-alt" style="color:var(--gold);"></i>
+            <span>Check-in from <strong style="color:white;">2:00 PM</strong></span>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-sign-out-alt" style="color:var(--gold);"></i>
+            <span>Check-out by <strong style="color:white;">12:00 Noon</strong></span>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-ban" style="color:var(--gold);"></i>
+            <span>Free cancellation up to 24 hours before arrival</span>
+          </div>
+          <div class="booking-info-item">
+            <i class="fas fa-id-card" style="color:var(--gold);"></i>
+            <span>Valid ID required at check-in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     BOOKING CONFIRMATION MODAL
+══════════════════════════════════════ -->
+<div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+    <div class="modal-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <h2 class="modal-title" id="modal-title">Reservation Received!</h2>
+    <p class="modal-text">
+      Thank you for choosing <strong style="color:var(--gold);">Debbie's Suites & Apartments</strong>.<br><br>
+      Your reservation request has been successfully submitted. Our team will review your booking details
+      and reach out to you within <strong style="color:white;">24 hours</strong> to confirm your reservation and provide any
+      important information about your upcoming stay.<br><br>
+      <em style="color:rgba(255,255,255,0.5);">Please check your email (including spam/junk folder) for a confirmation acknowledgement.</em>
+    </p>
+    <div style="margin-top:32px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <button class="btn btn-gold" data-modal-close>
+        <i class="fas fa-home"></i> Back to Home
+      </button>
+      <a href="contact.html" class="btn btn-outline-white">
+        <i class="fas fa-phone"></i> Contact Us
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <img src="../images/logo.png" alt="Debbie's Logo" />
+          <div>
+            <div class="footer-brand-name">Debbie's Suites & Apartments</div>
+            <div class="footer-brand-sub">Upperclass Events & Recreation</div>
+          </div>
+        </div>
+        <p class="footer-desc">Premium 3-star luxury hospitality, events and recreation in Orozo, Abuja, Nigeria.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/debbies_upperclass" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/DebbiesUpperclassEventandRecreation" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/2348091766665" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:debbiesupperclass@gmail.com" class="footer-social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Rooms & Suites</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Event Centre</a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Hotel Rooms</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Event Halls</a></li>
+          <li><a href="restaurant.html"><i class="fas fa-chevron-right"></i> Restaurant</a></li>
+          <li><a href="recreation.html"><i class="fas fa-chevron-right"></i> Swimming Pools</a></li>
+          <li><a href="services.html#gym"><i class="fas fa-chevron-right"></i> Gym</a></li>
+          <li><a href="services.html#lounge"><i class="fas fa-chevron-right"></i> Lounge & Bar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">KM 7, Nyanya-Karu-Karshi Road, Orozo, FCT Abuja</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="footer-contact-text">
+            <a href="tel:08091766665">08091766665</a><br>
+            <a href="tel:09033931121">09033931121</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text">
+            <a href="mailto:debbiesupperclass@gmail.com">debbiesupperclass@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> <span>Debbie's Suites & Apartments</span>. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

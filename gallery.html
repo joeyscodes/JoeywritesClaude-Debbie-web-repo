@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Debbie's Suites & Apartments photo gallery. See our luxury rooms, event halls, restaurant, gym, swimming pool and outdoor spaces." />
+  <title>Gallery | Debbie's Suites & Apartments</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <style>
+    /* Gallery page specific tweaks */
+    .gallery-grid {
+      transition: all 0.4s ease;
+    }
+    .gallery-item {
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <img src="../images/logo.png" alt="Debbie's Logo" class="preloader-logo" />
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  <p class="preloader-text">Preparing Your Experience</p>
+</div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo.png" alt="Debbie's Logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Debbie's Suites</span>
+        <span class="nav-logo-sub">Upperclass Events & Recreation</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Rooms</a>
+      <a href="services.html">Services</a>
+      <a href="events.html">Events</a>
+      <a href="restaurant.html">Dining</a>
+      <a href="recreation.html">Recreation</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle mobile menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="accommodation.html">Accommodation</a>
+  <a href="services.html">Services</a>
+  <a href="events.html">Event Centre</a>
+  <a href="restaurant.html">Restaurant</a>
+  <a href="recreation.html">Recreation</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="faq.html">FAQ</a>
+  <a href="booking.html" class="nav-mobile-cta">Book a Room</a>
+</div>
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <div class="section-label" style="color:var(--gold);">Visual Tour</div>
+    <h1>Our Gallery</h1>
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span><i class="fas fa-chevron-right"></i></span>
+      <span>Gallery</span>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center" style="margin-bottom:48px;">
+      <div class="section-label reveal">Visual Experience</div>
+      <h2 class="section-title reveal">A Glimpse Inside Debbie's</h2>
+      <div class="gold-divider center reveal"></div>
+      <p class="section-subtitle reveal">
+        From our lavish rooms to vibrant event spaces and serene recreation areas —
+        every image tells a story of luxury and excellence. Click any image to view it in full.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="gallery-filter reveal">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="rooms">Rooms & Suites</button>
+      <button class="filter-btn" data-filter="events">Event Centre</button>
+      <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+      <button class="filter-btn" data-filter="pool">Swimming Pool</button>
+      <button class="filter-btn" data-filter="gym">Gym & Fitness</button>
+      <button class="filter-btn" data-filter="lounge">Lounge & Bar</button>
+      <button class="filter-btn" data-filter="exterior">Exterior</button>
+    </div>
+
+    <!-- ──────────────────────────────────────────────────────────
+         GALLERY GRID
+         To add images: copy a .gallery-item block below and change:
+         1. data-category to one of: rooms, events, restaurant, pool, gym, lounge, exterior
+         2. src to your new image file path
+         3. alt text to describe the image
+    ────────────────────────────────────────────────────────── -->
+    <div class="gallery-grid">
+
+      <!-- ROOMS & SUITES -->
+      <div class="gallery-item" data-category="rooms">
+        <img src="../images/gallery/room-01.jpg" alt="Deluxe Guest Room Interior" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="rooms">
+        <img src="../images/gallery/room-02.jpg" alt="Executive Suite Bedroom" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="rooms">
+        <img src="../images/gallery/room-03.jpg" alt="Multi-Bedroom Apartment Living Area" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="rooms">
+        <img src="../images/gallery/room-04.jpg" alt="Suite Bathroom with Premium Fixtures" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="rooms">
+        <img src="../images/gallery/room-05.jpg" alt="Fully Equipped Kitchen in Apartment" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+      <!-- EVENT CENTRE -->
+      <div class="gallery-item" data-category="events">
+        <img src="../images/gallery/event-01.jpg" alt="Grand Event Hall Setup" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="../images/gallery/event-02.jpg" alt="Wedding Reception Decoration" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="../images/gallery/event-03.jpg" alt="Corporate Conference Setup" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="../images/gallery/event-04.jpg" alt="Gala Dinner Event Hall" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+      <!-- RESTAURANT -->
+      <div class="gallery-item" data-category="restaurant">
+        <img src="../images/gallery/restaurant-01.jpg" alt="Nigerian Restaurant Dining Area" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="restaurant">
+        <img src="../images/gallery/restaurant-02.jpg" alt="Continental Restaurant Interior" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="restaurant">
+        <img src="../images/gallery/restaurant-03.jpg" alt="Signature Nigerian Cuisine Dish" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="restaurant">
+        <img src="../images/gallery/restaurant-04.jpg" alt="Chef Preparing Continental Meal" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+      <!-- SWIMMING POOL -->
+      <div class="gallery-item" data-category="pool">
+        <img src="../images/gallery/pool-01.jpg" alt="Adult Swimming Pool at Debbie's" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="pool">
+        <img src="../images/gallery/pool-02.jpg" alt="Children's Swimming Pool" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="pool">
+        <img src="../images/gallery/pool-03.jpg" alt="Pool Bar and Outdoor Area" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+      <!-- GYM -->
+      <div class="gallery-item" data-category="gym">
+        <img src="../images/gallery/gym-01.jpg" alt="Fully Equipped Fitness Centre" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="gym">
+        <img src="../images/gallery/gym-02.jpg" alt="Cardio Equipment Area" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="gym">
+        <img src="../images/gallery/gym-03.jpg" alt="Weight Training Section" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+      <!-- LOUNGE & BAR -->
+      <div class="gallery-item" data-category="lounge">
+        <img src="../images/gallery/lounge-01.jpg" alt="Indoor Lounge Ambience" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="lounge">
+        <img src="../images/gallery/lounge-02.jpg" alt="Outdoor Lounge Terrace" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="lounge">
+        <img src="../images/gallery/lounge-03.jpg" alt="Pool Bar with Cocktails" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+      <!-- EXTERIOR -->
+      <div class="gallery-item" data-category="exterior">
+        <img src="../images/hero-bg.jpg" alt="Debbie's Suites Building Exterior" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="exterior">
+        <img src="../images/gallery/exterior-02.jpg" alt="Main Entrance and Reception" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="exterior">
+        <img src="../images/gallery/exterior-03.jpg" alt="Landscaped Gardens and Grounds" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="exterior">
+        <img src="../images/gallery/exterior-04.jpg" alt="Evening View of Debbie's Building" loading="lazy" />
+        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+
+    </div>
+    <!-- ── END GALLERY GRID ── -->
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:24px;">
+        <i class="fas fa-info-circle" style="color:var(--gold);margin-right:6px;"></i>
+        Experience it in person — we promise the reality exceeds the photos.
+      </p>
+      <a href="booking.html" class="btn btn-gold">
+        <i class="fas fa-calendar-check"></i> Book Your Stay Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <div class="lightbox-img-wrap">
+    <button class="lightbox-close" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+    <img src="" alt="" />
+    <div class="lightbox-caption"></div>
+  </div>
+  <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+  <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- CTA -->
+<section class="section-sm" style="background:linear-gradient(135deg,var(--navy),var(--green-dark));">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <div class="reveal">
+        <p style="font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Ready to Experience It Live?</p>
+        <h3 style="font-family:var(--font-display);font-size:1.8rem;color:white;">Book Your Stay at Debbie's Today</h3>
+      </div>
+      <a href="booking.html" class="btn btn-gold reveal">
+        <i class="fas fa-calendar-check"></i> Reserve Your Suite
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <img src="../images/logo.png" alt="Debbie's Logo" />
+          <div>
+            <div class="footer-brand-name">Debbie's Suites & Apartments</div>
+            <div class="footer-brand-sub">Upperclass Events & Recreation</div>
+          </div>
+        </div>
+        <p class="footer-desc">Premium 3-star luxury hospitality, events and recreation in Orozo, Abuja, Nigeria.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/debbies_upperclass" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/DebbiesUpperclassEventandRecreation" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/2348091766665" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:debbiesupperclass@gmail.com" class="footer-social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Rooms</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="accommodation.html"><i class="fas fa-chevron-right"></i> Hotel Rooms</a></li>
+          <li><a href="events.html"><i class="fas fa-chevron-right"></i> Event Halls</a></li>
+          <li><a href="restaurant.html"><i class="fas fa-chevron-right"></i> Restaurant</a></li>
+          <li><a href="recreation.html"><i class="fas fa-chevron-right"></i> Swimming Pools</a></li>
+          <li><a href="services.html#gym"><i class="fas fa-chevron-right"></i> Gym</a></li>
+          <li><a href="services.html#lounge"><i class="fas fa-chevron-right"></i> Lounge & Bar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">KM 7, Nyanya-Karu-Karshi Road, Orozo, FCT Abuja</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="footer-contact-text">
+            <a href="tel:08091766665">08091766665</a><br>
+            <a href="tel:09033931121">09033931121</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:debbiesupperclass@gmail.com">debbiesupperclass@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> <span>Debbie's Suites & Apartments</span>. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
